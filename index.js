@@ -302,7 +302,7 @@ window._load_script = function(url, callback) {
   addEvent(window, 'scroll', resize_tooltips);
   window._old_serialize = null;
   if (typeof serialize !== 'undefined') window._old_serialize = window.serialize;
-  _load_script("//d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function() {
+  _load_script("https://d3rxaij56vjege.cloudfront.net/form-serialize/0.3/serialize.min.js", function() {
     window._form_serialize = window.serialize;
     if (window._old_serialize) window.serialize = window._old_serialize;
   });
